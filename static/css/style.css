@@ -1,0 +1,238 @@
+/* Nerfies-style academic project page */
+
+:root {
+  --primary-color: #1a73e8;
+  --text-color: #333;
+  --light-bg: #f5f5f5;
+  --max-width: 980px;
+  --font-family: 'Noto Sans', 'Google Sans', Helvetica, Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background: #fff;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Hero / Title Section */
+.hero {
+  text-align: center;
+  padding: 60px 20px 30px;
+  background: #fff;
+}
+
+.hero h1 {
+  font-size: 2.4em;
+  font-weight: 700;
+  margin-bottom: 5px;
+  line-height: 1.2;
+}
+
+.hero .venue {
+  font-size: 1.3em;
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.author-list {
+  font-size: 1.05em;
+  margin-bottom: 8px;
+  line-height: 1.8;
+}
+
+.author-list a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.author-list a:hover {
+  color: var(--primary-color);
+}
+
+.author-note {
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.affiliation {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Buttons row */
+.btn-row {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 18px;
+  border: 2px solid var(--text-color);
+  border-radius: 50px;
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 0.95em;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  background: var(--text-color);
+  color: #fff;
+}
+
+.btn svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* Sections */
+.section {
+  padding: 30px 0;
+}
+
+.section-title {
+  font-size: 1.8em;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.section-body {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Teaser image */
+.teaser {
+  text-align: center;
+  padding: 10px 0 30px;
+}
+
+.teaser img {
+  width: 100%;
+  max-width: 1100px;
+}
+
+.teaser .caption {
+  font-size: 0.92em;
+  color: #555;
+  max-width: 900px;
+  margin: 12px auto 0;
+  text-align: left;
+}
+
+/* Abstract */
+.abstract {
+  background: var(--light-bg);
+}
+
+.abstract-text {
+  font-size: 1.05em;
+  text-align: justify;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Video */
+.video-section {
+  text-align: center;
+}
+
+.video-container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.video-container video {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+/* Results figures */
+.result-figure {
+  text-align: center;
+  margin: 25px 0;
+}
+
+.result-figure img,
+.result-figure video {
+  width: 100%;
+  max-width: 900px;
+}
+
+.result-figure .caption {
+  font-size: 0.92em;
+  color: #555;
+  max-width: 850px;
+  margin: 10px auto 0;
+  text-align: left;
+}
+
+/* BibTeX */
+.bibtex-section {
+  background: var(--light-bg);
+}
+
+.bibtex-box {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 750px;
+  margin: 0 auto;
+  overflow-x: auto;
+}
+
+.bibtex-box pre {
+  margin: 0;
+  font-size: 0.85em;
+  font-family: 'Courier New', monospace;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 0.85em;
+  color: #999;
+  border-top: 1px solid #eee;
+}
+
+.footer a {
+  color: #999;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 1.6em;
+  }
+}

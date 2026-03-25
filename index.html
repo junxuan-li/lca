@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Large-scale Codec Avatars</title>
+  <meta name="description" content="LCA: A high-fidelity, full-body 3D avatar model that generalizes to world-scale populations via large-scale pre/post-training.">
+  <link rel="stylesheet" href="static/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+</head>
+<body>
+
+<!-- ==================== Hero ==================== -->
+<section class="hero">
+  <div class="container">
+    <h1>Large-scale Codec Avatars</h1>
+    <p style="font-size:1.3em; color:#555; margin-top:0; margin-bottom:8px;">The Unreasonable Effectiveness of Large-scale Avatar Pretraining</p>
+    <p class="venue">CVPR 2026</p>
+
+    <p class="author-list">
+      <a href="https://junxuan-li.github.io/">Junxuan Li</a><sup>*</sup>,
+      <a href="https://rawalkhirodkar.github.io/">Rawal Khirodkar</a><sup>*</sup>,
+      Chengan He,
+      Zhongshi Jiang,
+      Giljoo Nam,
+      Lingchen Yang,
+      Jihyun Lee,
+      Egor Zakharov,
+      Zhaoen Su,
+      Rinat Abdrashitov,
+      Yuan Dong,
+      Julieta Martinez,
+      Kai Li,
+      Qingyang Tan,
+      Takaaki Shiratori,
+      Matthew Hu,
+      Peihong Guo,
+      Xuhua Huang,
+      Ariyan Zarei,
+      Marco Pesavento,
+      Yichen Xu,
+      He Wen,
+      Teng Deng,
+      Wyatt Borsos,
+      Anjali Thakrar,
+      Jean-Charles Bazin,
+      Carsten Stoll,
+      Gin&eacute;s Hidalgo,
+      James Booth,
+      Lucy Wang,
+      Xiaowen Ma,
+      Yu Rong,
+      Sairanjith Thalanki,
+      Chen Cao,
+      Christian H&auml;ne,
+      Abhishek Kar,
+      Sofien Bouaziz,
+      Jason Saragih,
+      Yaser Sheikh,
+      <a href="https://shunsukesaito.github.io/">Shunsuke Saito</a><sup>&dagger;</sup>
+    </p>
+    <p class="author-note"><sup>*</sup>Core contributors &nbsp;&nbsp; <sup>&dagger;</sup>Project lead</p>
+    <p class="affiliation">Codec Avatars Lab, Meta</p>
+
+    <div class="btn-row">
+      <a class="btn" href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>
+        arXiv
+      </a>
+      <a class="btn" href="#video">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+        Video
+      </a>
+      <a class="btn" href="#bibtex">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+        BibTeX
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== Teaser Video ==================== -->
+<section class="teaser">
+  <div class="container">
+    <div style="max-width:900px; margin:0 auto;">
+      <iframe style="width:100%; aspect-ratio:16/9; border-radius:8px;" src="https://www.youtube.com/embed/PLACEHOLDER" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== Abstract ==================== -->
+<section class="section abstract">
+  <div class="section-body">
+    <h2 class="section-title">Abstract</h2>
+    <p class="abstract-text">
+      We present <b>Large-Scale Codec Avatars (LCA)</b>, a high-fidelity, full-body 3D avatar model that generalizes to <b>world-scale populations</b> in a feedforward manner. For the first time, we introduce a <b style="color:#c0392b;">pre/post-training paradigm for 3D avatar modeling at scale</b>: pretraining on <b>1M in-the-wild videos</b> to learn broad priors, then <b style="color:#c0392b;">post-training on high-quality multi-view studio data</b> for enhanced fidelity.
+    </p>
+    <p class="abstract-text" style="margin-top:12px;">
+      <b>Key results:</b> LCA generalizes across hair styles, clothing, and demographics with <b>precise facial expressions</b> and <b>finger-level articulation</b>. We observe <b style="color:#c0392b;">emergent capabilities</b> &mdash; relightability, loose garment support, and zero-shot robustness to stylized imagery.
+    </p>
+  </div>
+</section>
+
+<!-- ==================== Video ==================== -->
+<section class="section video-section" id="video">
+  <div class="section-body">
+    <h2 class="section-title">Paper Overview (with voice over)</h2>
+    <div class="video-container">
+      <iframe style="width:100%; aspect-ratio:16/9;" src="https://www.youtube.com/embed/PLACEHOLDER" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== Extensions ==================== -->
+<section class="section">
+  <div class="section-body">
+    <h2 class="section-title">Post-Training Extensions</h2>
+
+    <!-- Loose Garment Support -->
+    <div class="result-figure">
+      <h3 style="text-align:center; margin-bottom:15px;">Loose Garment Support</h3>
+      <img src="static/images/deformer.jpg" alt="Loose Garment Support" style="max-width:600px;">
+      <p class="caption">
+        <b>Loose Garment Support.</b> (<i>Left</i>) Frontal view of the input condition. (<i>Middle</i>) Post-trained LCA avatar without loose garment support &mdash; skirts behave like pants when moving. (<i>Right</i>) LCA with loose garment support produces plausible animations without splitting garments.
+      </p>
+      <div style="margin-top:20px; max-width:900px; margin-left:auto; margin-right:auto;">
+        <video class="lazy-video" loop muted playsinline preload="none" controls style="width:100%;"><source src="static/videos/deformer_combined.mp4" type="video/mp4"></video>
+      </div>
+    </div>
+
+    <!-- Relighting -->
+    <div class="result-figure" style="margin-top:40px;">
+      <h3 style="text-align:center; margin-bottom:15px;">Relighting</h3>
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:20px; max-width:600px; margin-left:auto; margin-right:auto;">
+        <video class="lazy-video" loop muted playsinline preload="none" controls style="max-height:300px; object-fit:contain;"><source src="static/videos/sam_envmap.mp4" type="video/mp4"></video>
+        <video class="lazy-video" loop muted playsinline preload="none" controls style="max-height:300px; object-fit:contain;"><source src="static/videos/dani_envmap.mp4" type="video/mp4"></video>
+      </div>
+      <p class="caption" style="max-width:900px; margin: 0 auto;">
+        <b>Relightable LCA.</b> We demonstrate relighting under HDRI environment maps and point lights. LCA is conditioned only on unconstrained phone captures at test time.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== Avatar Gallery ==================== -->
+<section class="teaser">
+  <div class="container">
+    <div style="max-width:900px; margin:0 auto;">
+      <video class="lazy-video" autoplay loop muted playsinline preload="metadata" controls style="width:100%; border-radius:8px;"><source src="static/videos/sliding_video2.mp4" type="video/mp4"></video>
+    </div>
+    <p style="text-align:center; color:#666; margin-top:10px; font-size:0.95em;">
+      Avatars generated from unconstrained input images &mdash; fully animatable with expression, gaze, and body/hand pose control.
+    </p>
+  </div>
+</section>
+
+<!-- ==================== BibTeX ==================== -->
+<section class="section bibtex-section" id="bibtex">
+  <div class="section-body">
+    <h2 class="section-title">BibTeX</h2>
+    <div class="bibtex-box">
+      <pre><code>Coming soon.</code></pre>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== Footer ==================== -->
+<footer class="footer">
+  <p>
+    This website template is inspired by <a href="https://nerfies.github.io" target="_blank">Nerfies</a>.
+  </p>
+</footer>
+
+<script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.play();
+    } else {
+      entry.target.pause();
+    }
+  });
+}, { threshold: 0.25 });
+document.querySelectorAll('.lazy-video').forEach(v => observer.observe(v));
+</script>
+
+</body>
+</html>

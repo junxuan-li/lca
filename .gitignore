@@ -1,0 +1,7 @@
+# System files
+.DS_Store
+
+# Internal docs
+CLAUDE.md
+static/videos/LCA-supp-final-short.mp4
+static/videos/video.mp4
