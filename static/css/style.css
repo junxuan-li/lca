@@ -35,10 +35,11 @@ body {
 }
 
 .hero h1 {
-  font-size: 2.4em;
+  font-size: 2.8em;
   font-weight: 700;
   margin-bottom: 5px;
   line-height: 1.2;
+  color: #363636;
 }
 
 .hero .venue {
@@ -52,15 +53,16 @@ body {
   font-size: 1.05em;
   margin-bottom: 8px;
   line-height: 1.8;
+  color: #5a9cf8;
 }
 
 .author-list a {
-  color: var(--text-color);
+  color: #5a9cf8;
   text-decoration: none;
 }
 
 .author-list a:hover {
-  color: var(--primary-color);
+  text-decoration: underline;
 }
 
 .author-note {
@@ -71,7 +73,7 @@ body {
 
 .affiliation {
   font-size: 1.1em;
-  color: #555;
+  color: #363636;
   margin-bottom: 20px;
 }
 
@@ -88,18 +90,19 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  padding: 8px 18px;
-  border: 2px solid var(--text-color);
+  padding: 10px 20px;
+  border: none;
   border-radius: 50px;
   text-decoration: none;
-  color: var(--text-color);
+  background: #363636;
+  color: #fff;
   font-size: 0.95em;
   font-weight: 500;
   transition: all 0.2s;
 }
 
 .btn:hover {
-  background: var(--text-color);
+  background: #555;
   color: #fff;
 }
 
